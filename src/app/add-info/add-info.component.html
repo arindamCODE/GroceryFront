@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputID1">ID</label>
+                <input #ID type="text" class="form-control" id="exampleInputID1" placeholder="Enter ID">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputGroupID1">GroupID</label>
+                <input #GroupID type="text" class="form-control" id="exampleInputGroupID1" placeholder="Enter GroupID">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputName1">Name</label>
+                <input #Name type="text" class="form-control" id="exampleInputName1" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputDescription1">Description</label>
+                <input #Description type="text" class="form-control" id="exampleInputDescription1" placeholder="Enter Description">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputRate1">Rate</label>
+                <input #Rate type="text" class="form-control" id="exampleInputRate1" placeholder="Enter Rate">
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)='saveDetails(ID.value, GroupID.value, Name.value, Description.value, Rate.value)' routerLink='/group'>Submit</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <button routerLink='/addgroup'>Add</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let obj of object">
+                <tr>
+                    <td>{{obj.id}}</td>
+                    <td>{{obj.name}}</td>
+                    <button>Delete</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>

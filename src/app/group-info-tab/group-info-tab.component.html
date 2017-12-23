@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <h2>Results</h2>
+        <button>Add</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>GroupID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let obj of object">
+                <tr>
+                    <td>{{obj.id}}</td>
+                    <td>{{obj.groupID}}</td>
+                    <td>{{obj.name}}</td>
+                    <td>{{obj.description}}</td>
+                    <td>{{obj.rate}}</td>
+                    <button>Delete</button>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
